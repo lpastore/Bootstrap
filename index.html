@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stylus.css">
+
+
+    <title>Paradigma Virtual</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!--barra de navegación-->
+        <nav class="navbar navbar-expand-lg navbar-light colorVioleta">
+            <div class="container-fluid mb-5">
+                <a class="navbar-brand text-light" href="#">Paradigma Virtual</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./contacto.html">Contácto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Elige tu Curso
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Diseño Gráfico</a></li>
+                                <li>
+
+                                    <li><a class="dropdown-item" href="#">Edición de Video</a></li>
+                            </ul>
+                            </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--GRID-->
+        <div class="row">
+            <div class="col-12 bg-secondary mt-5">
+                <h2 class="p-3 text-light text-center">
+                    Nuestros Cursos
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 p-3 border bg-light">
+                <h2>
+                    Marketing
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti inventore cum placeat ab facilis ex id repudiandae earum assumenda?
+                </p>
+            </div>
+
+            <div class="col-4 p-3 border bg-info">
+                <h2>
+                    Diseño Gráfico
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti inventore cum placeat ab facilis ex id repudiandae earum assumenda?
+                </p>
+            </div>
+            <div class="col-4 p-3 border bg-light">
+                <h2>
+                    Edición de Video
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti inventore cum placeat ab facilis ex id repudiandae earum assumenda?
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bg-primary">
+                <p class="p-3 text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem ipsam voluptatum culpa rerum reprehenderit recusandae saepe animi tempora earum consectetur illo dolorem hic ullam a, eos iure. Libero, optio.
+                </p>
+
+            </div>
+
+            <!--acordeón-->
+
+            <div class="accordion mt-5" id="accordionExample">
+                <h1 class="text-light">Plan de Estudios</h1>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Marketing
+                </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Diseño Gráfico
+                </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+                            well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Edición de Video
+                </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Carrousel-->
+            <section>
+                <h1 class="carousel mt-5 text-light">Casos de Éxito</h1>
+                <div id="carouselExampleIndicators" class="carousel slide w-50 mb-5" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/comentario1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/comentario2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/comentario3.png" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/comentario1.png" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/comentario2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+            </section>
+
+    </main>
+
+
+
+
+    <script src=" https://unpkg.com/@popperjs/core@2 "></script>
+    <script src="./js/bootstrap.js "></script>
+</body>
+
+<footer class="footer">
+    <section class="siguenos">
+        <!--<div class="redes sociales">-->
+        <p>Síguenos en nuestras redes sociales:</p>
+
+        <a href="https://www.facebook.com" target="_blank"><img src="./img/logo-facebook.png" alt="logo facebook" width="60px"></a>
+
+
+        <a href="https://www.instagram.com" target="_blank"><img src="./img/logo-instagram.png" alt="logo instagram" width="60px"></a>
+
+
+        <a href="https://www.whatsapp.com" target="_blank"><img src="./img/logo-whatsApp.png" alt="logo whatsapp" width="60px"></a>
+        <!-- </div>-->
+
+        <p>&copy 2020 PARADIGMA VIRTUAL. Todos los derechos reservados.</p>
+    </section>
+</footer>
+
+
+</html>
